@@ -77,6 +77,26 @@ Performance Research, Still Films, Fancy Film, Moving Arts, and Bootleg Theater.
       </div>
 <div> <h3> After Effects Illustration </h3>
       <p> I feel that I got somewhere relatively good with this and that with more time and attention I should be able to complete the series of images to be evocative of something. I ran into issues that I still need to troubleshoot but was able to figure out a general workflow/process for doing these which was helpful.</p>
+
+
+    <script>
+        var videos = ["https://www.youtube.com/embed/6wccavZy6zo", "https://www.youtube.com/embed/7MRIEWyf6GY", "https://www.youtube.com/embed/GqS86cGJ8G0", "https://www.youtube.com/embed/N2holw2IJQ4","https://www.youtube.com/embed/32IETCzRs-4", "https://www.youtube.com/embed/oiuwxNzrSQA", "https://www.youtube.com/embed/m95ezT6CXxk"];
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '640');
+            player.setAttribute('height', '390');
+            player.setAttribute('src', randomVideoUrl);
+
+            playerDiv.appendChild(player);
+        };
+    </script>
+</head>
+
+<body>
+    <div id="random_player" />
+</body>
   
     <iframe width="720" height="480" src="https://www.youtube-nocookie.com/embed/6wccavZy6zo" title="Yonder1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe width="720" height="480" src="https://www.youtube-nocookie.com/embed/7MRIEWyf6GY" title="Yonder2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
