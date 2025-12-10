@@ -85,8 +85,8 @@ Performance Research, Still Films, Fancy Film, Moving Arts, and Bootleg Theater.
             var playerDiv = document.getElementById("random_player");
             var player = document.createElement("IFRAME");
             var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-            player.setAttribute('width', '1280');
-            player.setAttribute('height', '720');
+            player.setAttribute('width', '1080');
+            player.setAttribute('height', '1920');
             player.setAttribute('src', randomVideoUrl);
 
             playerDiv.appendChild(player);
