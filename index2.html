@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nina's Emerging Media Site</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;  
+    flex-direction: column;
+    height: 100vh;
+    font-family:  Trebuchet MS, sans-serif;
+    }
+</style>
+  </head>
+  
+  <body>
+      <h1> Fall 2025 Emerging Media Creative Portfolio </h1>
+       <div>       <a href="https://nvgbllc.github.io/emergingMedia/blog.html"> This is the Blog </a>  </div>
+        <div>  <h2> Project Concept : Brooklyn Backyard</h2>  </div>
+      <div> <h3> Artist Bio </h3> </div>
+       <p> Nina Bowers is a collagist who works in time structured mediums including documentary
+video, placemaking installations, soundscape scores and narratives, and improvisational or
+choreographed performance. She draws from her life through familial and personal archiving,
+observational research, and lived experience to reflect on societal relationships with death, care,
+aging, femininity, family, and environment. In playing with these themes her work points to
+conceptual ceremonies, co-creation memorials, sensory events, and liminal placemaking. Her
+practice is built on deconstructing, ritualizing, and complicating human narratives to form
+community and connection.</p>
+She received her undergraduate degree in Theater with Culture and Media at The New
+School and is currently completing her MFA at Hunter College in Integrated Media Arts. Nina
+has completed intensives and workshops at UCLA, Deep Play Institute, Abrons Arts Center,
+Movement Research, Soundial, Morbid Anatomy, BRIC Arts Media, Mono No Aware, Pratt
+Institute, Torn Page & William Esper Studio. She has done cultural development work with Film
+Forum, St. Ann's Warehouse, Brooklyn Fire Proof, Brooklyn Bridge Park, and Center for
+Performance Research, Still Films, Fancy Film, Moving Arts, and Bootleg Theater. </p>
+      
+     <div> <h3>Abstract</h3> 
+      <p> The experience of having a yard in Brooklyn while seen as a true amenity that is worthy of bragging rights is also not without a lot of complexity as a renter, as its a space that you are able to inhabit and stewart but only to a certain degree. The way in which nature has shaped this space and continues to shift it from season to season year to year is a fascinating and awe inspiring thing to witness, but the yard is also a lonesome space. For the most part I enjoy this solitude, this patch of ground surrounded by buildings, fences and neighboring yards to create a canyon effect with others while at the same time individually its own, its a relatable and strange feeling in this city of millions- surreal. The luxury of a small semi private peice of land becomes one that both connects and isolates.</p>
+</div> 
+
+      <div>
+        <img src="IMGBB/IMG_5154.jpg" style="width:75%" />
+      </div>
+
+      <div>
+        <img src="IMGBB/IMG_5286.jpg" style="width:75%" />
+      </div>
+
+      <div>
+        <img src="IMGBB/IMG_5295.jpg" style="width:75%" />
+      </div>
+
+      <div>
+        <img src="IMGBB/IMG_5297.jpg" style="width:75%" />
+      </div>
+
+      <div>
+        <img src="IMGBB/IMG_5389.jpg" style="width:75%" />
+      </div>
+
+      <div>
+        <img src="IMGBB/IMG_6096.jpg" style="width:75%" />
+      </div>
+
+      <div>
+        <img src="IMGBB/IMG_6106.jpg" style="width:75%" />
+      </div>
+
+      <div>
+        <img src="IMGBB/IMG_6110.jpg" style="width:75%" />
+      </div>
+ 
+      <div>
+        <img src="IMGBB/IMG_6229.jpg" style="width:75%" />
+      </div>
+ 
+      <div>
+        <img src="IMGBB/IMG_6113.jpg" style="width:75%" />
+      </div>
+      
+<div> <h3>Zine Poster</h3> 
+      <p> The process of creating this piece was difficult, but here is a start. Words are from the essay titled Yonder by Siri Hustvedt which has been an inspiration for me with regard to memory, location and our shifting relationships with place/space and time.</p>
+  </div> 
+   <div>
+        <img src="IMGBB/Page1.jpg" style="width:75%" />
+      </div>
+<div> <h3> After Effects Illustration </h3>
+      <p> Played with animating the language to articulate the ideas in the writing and connect them to the photographs visually.</p>
+</div>
+
+<div> <h3> Randomized Yonder </h3>
+      <p> Connect word, image and sound by animating the writing and reading it aloud. The piece reflects on the elusive nature of language, landscape and our minds- how we relate to space and how we relate to language can be rather subjective, the way we percieve a place or a person and then try and describe it will always be limited by the potential of language and yet we cannot help but be drawn to seek it. I might like to make some type or interactive element where the random videos, having users type in the videos that appear for them and aggregate its data somehow to create another piece within that.
+     My yard and this piece of writing have been places and concepts I have explored on my own before though art but never with after effects and coding, and while I do not feel especially refined with it or capable of controlling all the elements, but thats a bit of the fun. it does seem to be giving the feel of editing in practice but with more visual intentionality and reptition/technical elements to consider.
+      </p>
+</div>
+  <div id="random_player"></div>
+    <script>
+        var videos = ["https://www.youtube.com/embed/6wccavZy6zo", "https://www.youtube.com/embed/7MRIEWyf6GY", "https://www.youtube.com/embed/GqS86cGJ8G0", "https://www.youtube.com/embed/N2holw2IJQ4", "https://www.youtube.com/embed/oiuwxNzrSQA", "https://www.youtube.com/embed/m95ezT6CXxk","https://www.youtube.com/embed/fMimcEAileE"]; 
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '720');
+            player.setAttribute('height', '1280');
+            player.setAttribute('src', randomVideoUrl);
+
+            playerDiv.appendChild(player);
+        };
+    </script>
+    
+    </body>
+</html>
